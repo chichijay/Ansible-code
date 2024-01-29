@@ -1,0 +1,6 @@
+2024-01-23 18:52:37,102 p=15838 u=ec2-user n=ansible | 172.31.34.194 | CHANGED | rc=0 >>
+ 18:52:37 up 1 day, 22:40,  1 user,  load average: 0.00, 0.00, 0.00
+
+2024-01-23 18:52:37,337 p=15838 u=ec2-user n=ansible | 172.31.20.126 | CHANGED | rc=0 >>
+ 18:52:37 up 1 day, 22:40,  1 user,  load average: 0.00, 0.00, 0.00
+

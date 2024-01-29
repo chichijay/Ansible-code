@@ -1,0 +1,30 @@
+---
+- hosts: all
+  become: true
+  gather_facts: yes
+  ignore_errors: true
+  vars:
+    user_name: joy2020
+    group_name: devops
+  vars_files:
+    - variables.yml
+  tasks:
+    - name: check the time
+      command: dateyhhm
+#     when: ansible_distribution == "joy" or ansible_processor_nproc == 2
+
+    - name: create user joy
+      user:
+       name: "{{user_name}}"
+       comment: joy Admin
+
+    - name: create group
+      group:
+       name: "{{group_name}}"
+       state: present
+
+    - name: install package
+      package:
+        name: "{{pkg_name}}"
+        state: present
+    
